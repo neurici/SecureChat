@@ -137,7 +137,7 @@ require 'inc/functions.php';
 		</form>
 	</section>
 	<script type="text/javascript" src="scripts/sjcl.js"></script>
-	<script type="text/javascript" src="scripts/myCryptoChat.js"></script>
+	<script type="text/javascript" src="scripts/securechat.js"></script>
 	<script type="text/javascript">
 		function createChatroom()
 		{
