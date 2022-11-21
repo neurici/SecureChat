@@ -175,16 +175,16 @@ require 'inc/functions.php';
 							
 							sessionStorage.setItem(roomid, sjcl.codec.base64url.fromBits(key));
 							
-							window.location = "chatroom.php?id=" + xhr.response;
+							window.location = "chat.php?id=" + xhr.response;
 						}
 						else
 						{
-							window.location = "chatroom.php?id=" + xhr.response + "#" + sjcl.codec.base64url.fromBits(key);
+							window.location = "chat.php?id=" + xhr.response + "#" + sjcl.codec.base64url.fromBits(key);
 						}
 					}
 					else
 					{
-						alert("Failed to create the chatroom!");
+						alert("Eroare la crearea camerei de chat!");
 					}
 				}
 			}
