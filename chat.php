@@ -143,7 +143,7 @@
 			formData.append("username", username);
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open("POST", "action.php");
+			xhr.open("POST", "actiune.php");
 			
 			xhr.onreadystatechange = function()
 			{
