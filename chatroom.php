@@ -22,7 +22,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>MyCryptoChat</title>
+	<title>Secure Chat</title>
 	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	<meta name="viewport" content="width=device-width" />
 	<link href="style.css" rel="stylesheet" />
@@ -32,7 +32,7 @@
 		<div class="content-wrapper">
 			<nav>
 				<ul>
-					<li id="site-title"><a href="index.php">MyCryptoChat</a></li>
+					<li id="site-title"><a href="index.php">Sec ure Chat</a></li>
 					<div id="site-links">
 						<li><a href="statistici.php">Statistici</a></li>
 						<li><a href="despre.php">Despre</a></li>
@@ -85,7 +85,7 @@
 		</section>
 	</div>
 	<footer>
-		<p>&copy; 2022 MyCryptoChat <?php echo MYCRYPTOCHAT_VERSION; ?> by <a href="http://csergiu.tk">Cogian Sergiu</a></p>
+		<p>&copy; 2022 MyCryptoChat <?php echo MYCRYPTOCHAT_VERSION; ?> by <a href="hhttps://github.com/neurici/SecureChat/">Cogian Sergiu</a></p>
 	</footer>
 	<script type="text/javascript" src="scripts/sjcl.js"></script>
 	<script type="text/javascript" src="scripts/myCryptoChat.js"></script>
