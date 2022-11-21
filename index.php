@@ -157,7 +157,7 @@ require 'inc/functions.php';
 			}
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open("POST", "action.php");
+			xhr.open("POST", "actiune.php");
 			xhr.responseType = "json";
 			xhr.onreadystatechange = function()
 			{
