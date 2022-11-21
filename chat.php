@@ -88,7 +88,7 @@
 		<p>&copy; 2022 MyCryptoChat <?php echo MYCRYPTOCHAT_VERSION; ?> by <a href="hhttps://github.com/neurici/SecureChat/">Cogian Sergiu</a></p>
 	</footer>
 	<script type="text/javascript" src="scripts/sjcl.js"></script>
-	<script type="text/javascript" src="scripts/myCryptoChat.js"></script>
+	<script type="text/javascript" src="scripts/securechat.js"></script>
 	<script type="text/javascript">
 		var roomId = '<?php echo htmlspecialchars($roomid, ENT_QUOTES, 'UTF-8'); ?>';
 		var checkIntervalTimer;
@@ -212,7 +212,7 @@
 			formData.append("action", "disconnect");
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open("POST", "action.php");
+			xhr.open("POST", "actiune.php");
 			xhr.send(formData);
 		}
 		
