@@ -5,18 +5,18 @@ var cryptoOptions = {
 	ks: 256 // Keysize: 256 bits, not actually used when using bit arrays as an encryption key
 };
 
-// What's the id of the latest message received
+// Care este id-ul celui mai recent mesaj primit
 var lastMessageId 			= 0;
 var messageReceived 		= new Audio("beep.ogg");
 var eventMessageReceived 	= new Audio("beep2.ogg");
 
-// Generate a key using sjcl, a word is 32 bits, 32 * 8 = 256 bits
+// Generați o cheie folosind sjcl, un cuvânt are 32 de biți, 32 * 8 = 256 de biți
 function generateKey()
 {
 	return sjcl.random.randomWords(8);
 }
 
-// Adds the key to the URL, browsers don't send the values after # to the server, it is completely client-side
+// Adaugă cheia la adresa URL, browserele nu trimit valorile după # către server, este complet pe partea clientului
 function setLocationHash(value)
 {
 	document.location.hash = "#" + sjcl.codec.base64url.fromBits(value);
@@ -34,11 +34,11 @@ function addChatUser(encryptedUsername, key)
 		username = "*Encrypted*";
 	}
 	
-	// Create a span element, set the contents to a html encoded username
+	// Creare un element span, setare conținut la un nume de utilizator codat html
 	var node = document.createElement("span");
 	node.innerHTML = htmlEncode(username);
 	
-	// Add span to the users bar
+	// Adăugare element span la bara utilizatorilor
 	document.getElementById("chatusers").appendChild(node);
 }
 
